@@ -39,14 +39,14 @@ After the imagePicker take photo or dismiss without detecting any face, it will 
 //After getting data callback
 -(void)CLFaceDetectionImagePickerDidDismiss:(NSData *)data blnSuccess:(BOOL)blnSuccess
 {
-self.statusInfo.text = (blnSuccess)?@"Success":@"Failed";
+    self.statusInfo.text = (blnSuccess)?@"Success":@"Failed";
 
-if(data){
-self.imageView.image = [UIImage imageWithData:data];
-self.imageView.hidden = NO;
-}else{
-self.imageView.hidden = YES;
-}
+    if(data){
+        self.imageView.image = [UIImage imageWithData:data];
+        self.imageView.hidden = NO;
+    }else{
+        self.imageView.hidden = YES;
+    }
 }
 ```
 
@@ -74,12 +74,12 @@ You need to fire below delegate function to apply your customisation
 // Optional!!! Set The Face Detection Behavior Attributes
 -(NSDictionary *)faceDetectionBehaviorAttributes
 {
-return @{
-CLFaceDetectionTimes : @10,                 //Total times for capture clear detected face images to prevent user shake their heads in purpose
-CLFaceDetectionSquareImageName : @"CameraSqaure", //Different FaceDetection Square Image. try to use "squarePNG" for different image
-CLTotalDetectCountDownSecond : @12,        //Total waiting time, after this value, the picker will auto closed no matter it get face detected or not.
-CLCameraPosition : [NSNumber numberWithInteger:CLCaptureDevicePositionFront] //Which camera try to use, Front or back.  CLCaptureDevicePositionBack or CLCaptureDevicePositionFront
-};
+    return @{
+        CLFaceDetectionTimes : @10,                 //Total times for capture clear detected face images to prevent user shake their heads in purpose
+        CLFaceDetectionSquareImageName : @"CameraSqaure", //Different FaceDetection Square Image. try to use "squarePNG" for different image
+        CLTotalDetectCountDownSecond : @12,        //Total waiting time, after this value, the picker will auto closed no matter it get face detected or not.
+        CLCameraPosition : [NSNumber numberWithInteger:CLCaptureDevicePositionFront] //Which camera try to use, Front or back.  CLCaptureDevicePositionBack or CLCaptureDevicePositionFront
+    };
 }
 
 ```
