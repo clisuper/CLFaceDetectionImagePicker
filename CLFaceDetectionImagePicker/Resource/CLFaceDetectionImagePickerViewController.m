@@ -23,16 +23,19 @@
 NSString *const CLTotalDetectCountDownSecond = @"CLTotalDetectCountDownSecond";
 NSString *const CLFaceDetectionSquareImageName = @"CLFaceDetectionSquareImageName";
 NSString *const CLFaceDetectionTimes = @"CLFaceDetectionTimes";
+NSString *const CLCameraPosition = @"CLCameraPosition";
 
 //Default Values
 static NSInteger const CLTotalDetectCountDownSecondDefault = 10;
 static NSInteger const CLFaceDetectionTimesDefault = 5;
 static NSString* const CLFaceDetectionSquareImageNameDefault = @"CameraSquare";
+static NSInteger const CLCameraPositionDefault = AVCaptureDevicePositionFront;
 
 @interface CLFaceDetectionImagePickerViewController ()<UIGestureRecognizerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @property (nonatomic) NSInteger totalCountDownWaitingSecond;
 @property (nonatomic) NSInteger totalFaceDetectionTimes;
+@property (nonatomic) NSInteger cameraPosition;
 @property (nonatomic, strong) NSString *faceDetectionSquareImageName;
 
 
@@ -87,6 +90,7 @@ static NSString* const CLFaceDetectionSquareImageNameDefault = @"CameraSquare";
 
     self.square = [UIImage imageNamed: attributes[CLFaceDetectionSquareImageName] ? attributes[CLFaceDetectionSquareImageName] : CLFaceDetectionSquareImageNameDefault];
     
+    self.cameraPosition = attributes[CLCameraPosition] ? [attributes[CLCameraPosition] integerValue ]: CLCameraPositionDefault;
     
     self.totalFaceDetectionTimes = attributes[CLFaceDetectionTimes] ? [attributes[CLFaceDetectionTimes] integerValue] : CLFaceDetectionTimesDefault;
 }
@@ -150,7 +154,7 @@ static NSString* const CLFaceDetectionSquareImageNameDefault = @"CameraSquare";
     // Select a video device, make an input
 	AVCaptureDevice *device;
 	
-    AVCaptureDevicePosition desiredPosition = AVCaptureDevicePositionFront;
+    AVCaptureDevicePosition desiredPosition = self.cameraPosition;
 	
     // find the front facing camera
 	for (AVCaptureDevice *d in [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo]) {
@@ -239,7 +243,7 @@ static NSString* const CLFaceDetectionSquareImageNameDefault = @"CameraSquare";
     }
 	if (error) {
         [self throwError:[error localizedDescription]
-                   title:[NSString stringWithFormat:@"Please make sure camera is allowed to be accessed by Deputy Kiosk. \nYou can check it in Settings/Deputy Kiosk. \nFailed with errorCode %d", (int)[error code]]];
+                   title:[NSString stringWithFormat:@"Please make sure your front camera is allowed to be accessed. \nYou can check it in Settings. \nFailed with errorCode %d", (int)[error code]]];
 		[self teardownAVCapture];
 	}
 }
@@ -417,7 +421,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
             if(!data){
                 [self throwError:@"Sorry, we cannot detect your face." title:nil];
             }
-            [weakSelf.delegate CLFaceDetectionImagePickerDidDismiss: data blnSuccess:(data)];
+            [weakSelf.delegate CLFaceDetectionImagePickerDidDismiss: data blnSuccess:(data)?YES:NO];
             
         }];
     });
@@ -486,7 +490,6 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 	}
     
     CGSize parentFrameSize = [self.preView frame].size;
-	NSString *gravity = [self.previewLayer videoGravity];
     CATextLayer *featureLayer = nil;
     
     // re-use an existing layer if possible
