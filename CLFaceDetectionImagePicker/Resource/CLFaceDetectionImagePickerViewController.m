@@ -1,9 +1,9 @@
 //
-//  DPLiveImagePickerViewController.m
+//  CLFaceDetectionImagePickerViewController.m
 //  DeputyKiosk
 //
-//  Created by cli on 26/02/14.
-//  Copyright (c) 2014 deputy.com. All rights reserved.
+//  Created by caesar on 26/02/14.
+//  Copyright (c) 2014 Caesar. All rights reserved.
 //
 
 #import "CLFaceDetectionImagePickerViewController.h"
@@ -17,15 +17,11 @@
 
 #import "UIImage+CL.h"
 
-//#import "SVProgressHUD.h"
-//#import "UIImage+Deputy.h"
-//#import "DeputyUserContextHandler.h"
-
 #define AUTO_FACE_DETECTION_CYCLE_TIME 10
 #define TOTAL_TIMES_DETECT_FACE 5
 #define TOTAL_TIMES_COUNT_DOWN 4
 
-@interface DPLiveImagePickerViewController ()<UIGestureRecognizerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface CLFaceDetectionImagePickerViewController ()<UIGestureRecognizerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *preView;
 
@@ -49,7 +45,7 @@
       orientation:(UIDeviceOrientation)orientation;
 @end
 
-@implementation DPLiveImagePickerViewController
+@implementation CLFaceDetectionImagePickerViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -188,7 +184,7 @@
                     
                     [self throwError:@"It seems your camera orientation is not set properly. Please make sure your iPad is in landscape position and try again." title:nil];
                     
-                    [weakSelf.delegate DPLiveImagePickerDidDismiss: nil blnSuccess:NO];
+                    [weakSelf.delegate CLFaceDetectionImagePickerDidDismiss: nil blnSuccess:NO];
                     
                 }];
             });
@@ -386,7 +382,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
             if(!data){
                 [self throwError:@"Sorry, we cannot detect your face." title:nil];
             }
-            [weakSelf.delegate DPLiveImagePickerDidDismiss: data blnSuccess:(data)];
+            [weakSelf.delegate CLFaceDetectionImagePickerDidDismiss: data blnSuccess:(data)];
             
         }];
     });
@@ -513,7 +509,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     
 	CGSize parentFrameSize = [self.preView frame].size;
 	NSString *gravity = [self.previewLayer videoGravity];
-	CGRect previewBox = [DPLiveImagePickerViewController videoPreviewBoxForGravity:gravity
+	CGRect previewBox = [CLFaceDetectionImagePickerViewController videoPreviewBoxForGravity:gravity
                                                                  frameSize:parentFrameSize
                                                               apertureSize:clap.size];
 	

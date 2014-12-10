@@ -9,11 +9,11 @@
 #import "ViewController.h"
 #import "CLFaceDetectionImagePickerViewController.h"
 
-@interface ViewController ()<DPLiveImagePickerDelegate>
+@interface ViewController ()<CLFaceDetectionImagePickerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *statusInfo;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
-@property (nonatomic, strong) DPLiveImagePickerViewController *imagePickerViewController;
+@property (nonatomic, strong) CLFaceDetectionImagePickerViewController *imagePickerViewController;
 @end
 
 @implementation ViewController
@@ -34,10 +34,12 @@
     
 }
 
--(DPLiveImagePickerViewController *)imagePickerViewController
+
+//Logic start
+-(CLFaceDetectionImagePickerViewController *)imagePickerViewController
 {
     if(!_imagePickerViewController){
-        _imagePickerViewController = [[UIStoryboard storyboardWithName:@"DPLiveImage" bundle:nil] instantiateViewControllerWithIdentifier:@"DPLiveImagePickerViewController"];
+        _imagePickerViewController = [[UIStoryboard storyboardWithName:@"CLFaceDetectionImagePicker" bundle:nil] instantiateViewControllerWithIdentifier:@"CLFaceDetectionImagePickerViewController"];
         _imagePickerViewController.delegate = self;
     }
     return _imagePickerViewController;
@@ -48,8 +50,8 @@
 }
 
 
-#pragma DPLiveImagePickerDelegate
--(void)DPLiveImagePickerDidDismiss:(NSData *)data blnSuccess:(BOOL)blnSuccess
+#pragma CLFaceDetectionImagePickerDelegate
+-(void)CLFaceDetectionImagePickerDidDismiss:(NSData *)data blnSuccess:(BOOL)blnSuccess
 {
     self.statusInfo.text = (blnSuccess)?@"Success":@"Failed";
     
