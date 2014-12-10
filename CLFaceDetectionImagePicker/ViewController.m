@@ -39,7 +39,7 @@
 -(CLFaceDetectionImagePickerViewController *)imagePickerViewController
 {
     if(!_imagePickerViewController){
-        _imagePickerViewController = [[UIStoryboard storyboardWithName:@"CLFaceDetectionImagePicker" bundle:nil] instantiateViewControllerWithIdentifier:@"CLFaceDetectionImagePickerViewController"];
+        _imagePickerViewController = [CLFaceDetectionImagePickerViewController new];
         _imagePickerViewController.delegate = self;
     }
     return _imagePickerViewController;

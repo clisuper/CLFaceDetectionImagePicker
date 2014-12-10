@@ -14,14 +14,16 @@
 		3912AABD1A37FC6700DF07C8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAB51A37FC6700DF07C8 /* Info.plist */; };
 		3912AABE1A37FC6700DF07C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAB61A37FC6700DF07C8 /* main.m */; };
 		3912AABF1A37FC6700DF07C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAB81A37FC6700DF07C8 /* ViewController.m */; };
-		3912AADE1A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAD91A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m */; };
-		3912AAE61A37FE1A00DF07C8 /* CameraSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAE21A37FE1A00DF07C8 /* CameraSquare.png */; };
-		3912AAE71A37FE1A00DF07C8 /* CameraSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAE31A37FE1A00DF07C8 /* CameraSquare@2x.png */; };
-		3912AAE91A37FE1A00DF07C8 /* squarePNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAE51A37FE1A00DF07C8 /* squarePNG.png */; };
-		3912AAEC1A37FFF000DF07C8 /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAEB1A37FFF000DF07C8 /* UIImage+CL.m */; };
-		3912AAEE1A38081000DF07C8 /* CLFaceDetectionImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAED1A38081000DF07C8 /* CLFaceDetectionImagePicker.storyboard */; };
 		3912AAF01A3815BB00DF07C8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAEF1A3815BB00DF07C8 /* LICENSE.txt */; };
-		3912AAF21A3815C100DF07C8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAF11A3815C100DF07C8 /* LICENSE.txt */; };
+		3912AAFE1A38176800DF07C8 /* CameraSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAF51A38176800DF07C8 /* CameraSquare.png */; };
+		3912AAFF1A38176800DF07C8 /* CameraSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAF61A38176800DF07C8 /* CameraSquare@2x.png */; };
+		3912AB001A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAF71A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard */; };
+		3912AB011A38176800DF07C8 /* squarePNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAF81A38176800DF07C8 /* squarePNG.png */; };
+		3912AB021A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAFA1A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m */; };
+		3912AB031A38176800DF07C8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAFB1A38176800DF07C8 /* LICENSE.txt */; };
+		3912AB041A38176800DF07C8 /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAFD1A38176800DF07C8 /* UIImage+CL.m */; };
+		3912AB081A381BD400DF07C8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3912AB071A381BD300DF07C8 /* README.md */; };
+		3912AB0A1A381BE100DF07C8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3912AB091A381BE100DF07C8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +48,18 @@
 		3912AAB61A37FC6700DF07C8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3912AAB71A37FC6700DF07C8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3912AAB81A37FC6700DF07C8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3912AAD81A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFaceDetectionImagePickerViewController.h; sourceTree = "<group>"; };
-		3912AAD91A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFaceDetectionImagePickerViewController.m; sourceTree = "<group>"; };
-		3912AAE21A37FE1A00DF07C8 /* CameraSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraSquare.png; sourceTree = "<group>"; };
-		3912AAE31A37FE1A00DF07C8 /* CameraSquare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CameraSquare@2x.png"; sourceTree = "<group>"; };
-		3912AAE51A37FE1A00DF07C8 /* squarePNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarePNG.png; sourceTree = "<group>"; };
-		3912AAEA1A37FFF000DF07C8 /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
-		3912AAEB1A37FFF000DF07C8 /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
-		3912AAED1A38081000DF07C8 /* CLFaceDetectionImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLFaceDetectionImagePicker.storyboard; sourceTree = "<group>"; };
 		3912AAEF1A3815BB00DF07C8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		3912AAF11A3815C100DF07C8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = CLFaceDetectionImagePicker/Resource/LICENSE.txt; sourceTree = SOURCE_ROOT; };
+		3912AAF51A38176800DF07C8 /* CameraSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraSquare.png; sourceTree = "<group>"; };
+		3912AAF61A38176800DF07C8 /* CameraSquare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CameraSquare@2x.png"; sourceTree = "<group>"; };
+		3912AAF71A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLFaceDetectionImagePicker.storyboard; sourceTree = "<group>"; };
+		3912AAF81A38176800DF07C8 /* squarePNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarePNG.png; sourceTree = "<group>"; };
+		3912AAF91A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFaceDetectionImagePickerViewController.h; sourceTree = "<group>"; };
+		3912AAFA1A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFaceDetectionImagePickerViewController.m; sourceTree = "<group>"; };
+		3912AAFB1A38176800DF07C8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		3912AAFC1A38176800DF07C8 /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
+		3912AAFD1A38176800DF07C8 /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
+		3912AB071A381BD300DF07C8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		3912AB091A381BE100DF07C8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,9 @@
 		3912AAAD1A37FC6700DF07C8 /* CLFaceDetectionImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				3912AB071A381BD300DF07C8 /* README.md */,
+				3912AAF31A38176800DF07C8 /* CLFaceDetectionImagePickerSourceCode */,
 				3912AAEF1A3815BB00DF07C8 /* LICENSE.txt */,
-				3912AAD41A37FDCE00DF07C8 /* Resource */,
 				3912AAAE1A37FC6700DF07C8 /* AppDelegate.h */,
 				3912AAAF1A37FC6700DF07C8 /* AppDelegate.m */,
 				3912AAB01A37FC6700DF07C8 /* LaunchScreen.xib */,
@@ -111,26 +116,27 @@
 			path = CLFaceDetectionImagePicker;
 			sourceTree = "<group>";
 		};
-		3912AAD41A37FDCE00DF07C8 /* Resource */ = {
+		3912AAF31A38176800DF07C8 /* CLFaceDetectionImagePickerSourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				3912AAE11A37FE1A00DF07C8 /* assets */,
-				3912AAD81A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.h */,
-				3912AAD91A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m */,
-				3912AAEA1A37FFF000DF07C8 /* UIImage+CL.h */,
-				3912AAEB1A37FFF000DF07C8 /* UIImage+CL.m */,
+				3912AB091A381BE100DF07C8 /* README.md */,
+				3912AAF41A38176800DF07C8 /* assets */,
+				3912AAF91A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.h */,
+				3912AAFA1A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m */,
+				3912AAFB1A38176800DF07C8 /* LICENSE.txt */,
+				3912AAFC1A38176800DF07C8 /* UIImage+CL.h */,
+				3912AAFD1A38176800DF07C8 /* UIImage+CL.m */,
 			);
-			path = Resource;
+			path = CLFaceDetectionImagePickerSourceCode;
 			sourceTree = "<group>";
 		};
-		3912AAE11A37FE1A00DF07C8 /* assets */ = {
+		3912AAF41A38176800DF07C8 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				3912AAF11A3815C100DF07C8 /* LICENSE.txt */,
-				3912AAED1A38081000DF07C8 /* CLFaceDetectionImagePicker.storyboard */,
-				3912AAE21A37FE1A00DF07C8 /* CameraSquare.png */,
-				3912AAE31A37FE1A00DF07C8 /* CameraSquare@2x.png */,
-				3912AAE51A37FE1A00DF07C8 /* squarePNG.png */,
+				3912AAF51A38176800DF07C8 /* CameraSquare.png */,
+				3912AAF61A38176800DF07C8 /* CameraSquare@2x.png */,
+				3912AAF71A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard */,
+				3912AAF81A38176800DF07C8 /* squarePNG.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -215,16 +221,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3912AAE71A37FE1A00DF07C8 /* CameraSquare@2x.png in Resources */,
 				3912AABD1A37FC6700DF07C8 /* Info.plist in Resources */,
-				3912AAEE1A38081000DF07C8 /* CLFaceDetectionImagePicker.storyboard in Resources */,
 				3912AAF01A3815BB00DF07C8 /* LICENSE.txt in Resources */,
+				3912AB001A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard in Resources */,
 				3912AABC1A37FC6700DF07C8 /* Images.xcassets in Resources */,
+				3912AB011A38176800DF07C8 /* squarePNG.png in Resources */,
+				3912AAFE1A38176800DF07C8 /* CameraSquare.png in Resources */,
+				3912AAFF1A38176800DF07C8 /* CameraSquare@2x.png in Resources */,
 				3912AABA1A37FC6700DF07C8 /* LaunchScreen.xib in Resources */,
+				3912AB031A38176800DF07C8 /* LICENSE.txt in Resources */,
 				3912AABB1A37FC6700DF07C8 /* Main.storyboard in Resources */,
-				3912AAE91A37FE1A00DF07C8 /* squarePNG.png in Resources */,
-				3912AAF21A3815C100DF07C8 /* LICENSE.txt in Resources */,
-				3912AAE61A37FE1A00DF07C8 /* CameraSquare.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,10 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3912AADE1A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */,
-				3912AAEC1A37FFF000DF07C8 /* UIImage+CL.m in Sources */,
 				3912AABF1A37FC6700DF07C8 /* ViewController.m in Sources */,
+				3912AB041A38176800DF07C8 /* UIImage+CL.m in Sources */,
+				3912AB081A381BD400DF07C8 /* README.md in Sources */,
+				3912AB0A1A381BE100DF07C8 /* README.md in Sources */,
 				3912AABE1A37FC6700DF07C8 /* main.m in Sources */,
+				3912AB021A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */,
 				3912AAB91A37FC6700DF07C8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

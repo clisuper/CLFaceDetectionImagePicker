@@ -63,13 +63,9 @@ static NSInteger const CLCameraPositionDefault = AVCaptureDevicePositionFront;
 
 @implementation CLFaceDetectionImagePickerViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id) init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    return [[UIStoryboard storyboardWithName:@"CLFaceDetectionImagePicker" bundle:nil] instantiateViewControllerWithIdentifier:@"CLFaceDetectionImagePickerViewController"];
 }
 
 -(void)setDelegate:(id<CLFaceDetectionImagePickerDelegate>)delegate
@@ -166,7 +162,7 @@ static NSInteger const CLCameraPositionDefault = AVCaptureDevicePositionFront;
     // fall back to the default camera.
     if( nil == device )
     {
-        error = [NSError errorWithDomain:NSOSStatusErrorDomain code:404 userInfo:@{@"message": @"No Front camera found."}];
+        error = [NSError errorWithDomain:NSOSStatusErrorDomain code:404 userInfo:@{@"message": @"No camera found."}];
     }
     
     // get the input device
