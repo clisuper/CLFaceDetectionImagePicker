@@ -3,7 +3,6 @@
 CLFaceDetectionImagePicker is a clean and so-easy-to-use ImagePicker meant to do live face detection. 
 It will draw a square if any face is detected in the camera and take photo automatically if the face detection is passed.
 
-![SVProgressHUD](http://f.cl.ly/items/2G1F1Z0M0k0h2U3V1p39/SVProgressHUD.gif)
 
 ## Installation
 * Drag the `CLFaceDetectionImagePickerSourceCode` folder into your project.
