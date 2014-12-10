@@ -39,14 +39,14 @@ After the imagePicker take photo or dismiss without detecting any face, it will 
 //After getting data callback
 -(void)CLFaceDetectionImagePickerDidDismiss:(NSData *)data blnSuccess:(BOOL)blnSuccess
 {
-    self.statusInfo.text = (blnSuccess)?@"Success":@"Failed";
-    
-    if(data){
-        self.imageView.image = [UIImage imageWithData:data];
-        self.imageView.hidden = NO;
-    }else{
-        self.imageView.hidden = YES;
-    }
+self.statusInfo.text = (blnSuccess)?@"Success":@"Failed";
+
+if(data){
+self.imageView.image = [UIImage imageWithData:data];
+self.imageView.hidden = NO;
+}else{
+self.imageView.hidden = YES;
+}
 }
 ```
 
@@ -58,13 +58,13 @@ Using CLFaceDetectionImagePickerDelegate to customise the behaviour
 
 Following customisation key is allowed
 
-CLTotalDetectCountDownSecond;    //Total length of waiting period for face detection - Default: 20
+-CLTotalDetectCountDownSecond;    //Total length of waiting period for face detection - Default: 20
 
-CLFaceDetectionSquareImageName;  //Image name for the face detection square image    - Default: CameraSquare
+-CLFaceDetectionSquareImageName;  //Image name for the face detection square image    - Default: CameraSquare
 
-CLFaceDetectionTimes;            //Continually detecting face times, this will be helpful to make sure the people are not shaking his head by purpose       - Default: 5
+-CLFaceDetectionTimes;            //Continually detecting face times, this will be helpful to make sure the people are not shaking his head by purpose       - Default: 5
 
-CLCameraPosition;                //Choose which camera you want to use, CLCaptureDevicePositionBack or CLCaptureDevicePositionFront  -Default: CLCaptureDevicePositionFront
+-CLCameraPosition;                //Choose which camera you want to use, CLCaptureDevicePositionBack or CLCaptureDevicePositionFront  -Default: CLCaptureDevicePositionFront
 
 
 
@@ -74,12 +74,12 @@ You need to fire below delegate function to apply your customisation
 // Optional!!! Set The Face Detection Behavior Attributes
 -(NSDictionary *)faceDetectionBehaviorAttributes
 {
-    return @{
-             CLFaceDetectionTimes : @10,                 //Total times for capture clear detected face images to prevent user shake their heads in purpose
-             CLFaceDetectionSquareImageName : @"CameraSqaure", //Different FaceDetection Square Image. try to use "squarePNG" for different image
-             CLTotalDetectCountDownSecond : @12,        //Total waiting time, after this value, the picker will auto closed no matter it get face detected or not.
-             CLCameraPosition : [NSNumber numberWithInteger:CLCaptureDevicePositionFront] //Which camera try to use, Front or back.  CLCaptureDevicePositionBack or CLCaptureDevicePositionFront
-             };
+return @{
+CLFaceDetectionTimes : @10,                 //Total times for capture clear detected face images to prevent user shake their heads in purpose
+CLFaceDetectionSquareImageName : @"CameraSqaure", //Different FaceDetection Square Image. try to use "squarePNG" for different image
+CLTotalDetectCountDownSecond : @12,        //Total waiting time, after this value, the picker will auto closed no matter it get face detected or not.
+CLCameraPosition : [NSNumber numberWithInteger:CLCaptureDevicePositionFront] //Which camera try to use, Front or back.  CLCaptureDevicePositionBack or CLCaptureDevicePositionFront
+};
 }
 
 ```
