@@ -58,7 +58,7 @@ Using CLFaceDetectionImagePickerDelegate to customise the behaviour
 
 Following customisation key is allowed
 
--CLTotalDetectCountDownSecond;    //Total length of waiting period for face detection - Default: 20
+-CLTotalDetectCountDownSecond;    //Total length of waiting period for face detection - Default: 10
 
 -CLFaceDetectionSquareImageName;  //Image name for the face detection square image    - Default: CameraSquare
 
