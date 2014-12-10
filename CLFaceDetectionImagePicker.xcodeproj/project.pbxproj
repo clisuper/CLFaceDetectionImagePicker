@@ -26,6 +26,14 @@
 		394B8B381A38312D0051978C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B361A38312D0051978C /* LICENSE.txt */; };
 		394B8B391A38312D0051978C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 394B8B371A38312D0051978C /* README.md */; };
 		394B8B3B1A3834B00051978C /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B3A1A3834B00051978C /* screenshot.png */; };
+		394B8B481A38358D0051978C /* CameraSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B3E1A38358D0051978C /* CameraSquare.png */; };
+		394B8B491A38358D0051978C /* CameraSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B3F1A38358D0051978C /* CameraSquare@2x.png */; };
+		394B8B4A1A38358D0051978C /* CLFaceDetectionImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B401A38358D0051978C /* CLFaceDetectionImagePicker.storyboard */; };
+		394B8B4B1A38358D0051978C /* squarePNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B411A38358D0051978C /* squarePNG.png */; };
+		394B8B4C1A38358D0051978C /* CLFaceDetectionImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394B8B431A38358D0051978C /* CLFaceDetectionImagePickerViewController.m */; };
+		394B8B4D1A38358D0051978C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B441A38358D0051978C /* LICENSE.txt */; };
+		394B8B4E1A38358D0051978C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 394B8B451A38358D0051978C /* README.md */; };
+		394B8B4F1A38358D0051978C /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 394B8B471A38358D0051978C /* UIImage+CL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +72,16 @@
 		394B8B361A38312D0051978C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		394B8B371A38312D0051978C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		394B8B3A1A3834B00051978C /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		394B8B3E1A38358D0051978C /* CameraSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraSquare.png; sourceTree = "<group>"; };
+		394B8B3F1A38358D0051978C /* CameraSquare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CameraSquare@2x.png"; sourceTree = "<group>"; };
+		394B8B401A38358D0051978C /* CLFaceDetectionImagePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLFaceDetectionImagePicker.storyboard; sourceTree = "<group>"; };
+		394B8B411A38358D0051978C /* squarePNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarePNG.png; sourceTree = "<group>"; };
+		394B8B421A38358D0051978C /* CLFaceDetectionImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFaceDetectionImagePickerViewController.h; sourceTree = "<group>"; };
+		394B8B431A38358D0051978C /* CLFaceDetectionImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFaceDetectionImagePickerViewController.m; sourceTree = "<group>"; };
+		394B8B441A38358D0051978C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		394B8B451A38358D0051978C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		394B8B461A38358D0051978C /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
+		394B8B471A38358D0051978C /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +105,7 @@
 		3912AA681A37FBD400DF07C8 = {
 			isa = PBXGroup;
 			children = (
+				394B8B3C1A38358D0051978C /* CLFaceDetectionImagePickerSourceCode */,
 				394B8B3A1A3834B00051978C /* screenshot.png */,
 				394B8B361A38312D0051978C /* LICENSE.txt */,
 				394B8B371A38312D0051978C /* README.md */,
@@ -143,6 +162,32 @@
 				3912AAF61A38176800DF07C8 /* CameraSquare@2x.png */,
 				3912AAF71A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard */,
 				3912AAF81A38176800DF07C8 /* squarePNG.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		394B8B3C1A38358D0051978C /* CLFaceDetectionImagePickerSourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				394B8B3D1A38358D0051978C /* assets */,
+				394B8B421A38358D0051978C /* CLFaceDetectionImagePickerViewController.h */,
+				394B8B431A38358D0051978C /* CLFaceDetectionImagePickerViewController.m */,
+				394B8B441A38358D0051978C /* LICENSE.txt */,
+				394B8B451A38358D0051978C /* README.md */,
+				394B8B461A38358D0051978C /* UIImage+CL.h */,
+				394B8B471A38358D0051978C /* UIImage+CL.m */,
+			);
+			name = CLFaceDetectionImagePickerSourceCode;
+			path = CLFaceDetectionImagePicker/CLFaceDetectionImagePickerSourceCode;
+			sourceTree = "<group>";
+		};
+		394B8B3D1A38358D0051978C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				394B8B3E1A38358D0051978C /* CameraSquare.png */,
+				394B8B3F1A38358D0051978C /* CameraSquare@2x.png */,
+				394B8B401A38358D0051978C /* CLFaceDetectionImagePicker.storyboard */,
+				394B8B411A38358D0051978C /* squarePNG.png */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -227,18 +272,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394B8B4D1A38358D0051978C /* LICENSE.txt in Resources */,
 				394B8B381A38312D0051978C /* LICENSE.txt in Resources */,
 				3912AABD1A37FC6700DF07C8 /* Info.plist in Resources */,
 				3912AAF01A3815BB00DF07C8 /* LICENSE.txt in Resources */,
 				3912AB001A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard in Resources */,
+				394B8B491A38358D0051978C /* CameraSquare@2x.png in Resources */,
 				3912AABC1A37FC6700DF07C8 /* Images.xcassets in Resources */,
+				394B8B4B1A38358D0051978C /* squarePNG.png in Resources */,
 				3912AB011A38176800DF07C8 /* squarePNG.png in Resources */,
 				3912AAFE1A38176800DF07C8 /* CameraSquare.png in Resources */,
 				394B8B3B1A3834B00051978C /* screenshot.png in Resources */,
 				3912AAFF1A38176800DF07C8 /* CameraSquare@2x.png in Resources */,
 				3912AABA1A37FC6700DF07C8 /* LaunchScreen.xib in Resources */,
+				394B8B4A1A38358D0051978C /* CLFaceDetectionImagePicker.storyboard in Resources */,
 				3912AB031A38176800DF07C8 /* LICENSE.txt in Resources */,
 				3912AABB1A37FC6700DF07C8 /* Main.storyboard in Resources */,
+				394B8B481A38358D0051978C /* CameraSquare.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +308,12 @@
 			files = (
 				3912AABF1A37FC6700DF07C8 /* ViewController.m in Sources */,
 				3912AB041A38176800DF07C8 /* UIImage+CL.m in Sources */,
+				394B8B4C1A38358D0051978C /* CLFaceDetectionImagePickerViewController.m in Sources */,
 				3912AB0A1A381BE100DF07C8 /* README.md in Sources */,
 				394B8B391A38312D0051978C /* README.md in Sources */,
 				3912AABE1A37FC6700DF07C8 /* main.m in Sources */,
+				394B8B4F1A38358D0051978C /* UIImage+CL.m in Sources */,
+				394B8B4E1A38358D0051978C /* README.md in Sources */,
 				3912AB021A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */,
 				3912AAB91A37FC6700DF07C8 /* AppDelegate.m in Sources */,
 			);
