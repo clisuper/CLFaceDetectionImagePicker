@@ -25,6 +25,7 @@
 		3912AB0A1A381BE100DF07C8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3912AB091A381BE100DF07C8 /* README.md */; };
 		394B8B381A38312D0051978C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B361A38312D0051978C /* LICENSE.txt */; };
 		394B8B391A38312D0051978C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 394B8B371A38312D0051978C /* README.md */; };
+		394B8B3B1A3834B00051978C /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B3A1A3834B00051978C /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		3912AB091A381BE100DF07C8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		394B8B361A38312D0051978C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		394B8B371A38312D0051978C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		394B8B3A1A3834B00051978C /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		3912AA681A37FBD400DF07C8 = {
 			isa = PBXGroup;
 			children = (
+				394B8B3A1A3834B00051978C /* screenshot.png */,
 				394B8B361A38312D0051978C /* LICENSE.txt */,
 				394B8B371A38312D0051978C /* README.md */,
 				3912AAAD1A37FC6700DF07C8 /* CLFaceDetectionImagePicker */,
@@ -231,6 +234,7 @@
 				3912AABC1A37FC6700DF07C8 /* Images.xcassets in Resources */,
 				3912AB011A38176800DF07C8 /* squarePNG.png in Resources */,
 				3912AAFE1A38176800DF07C8 /* CameraSquare.png in Resources */,
+				394B8B3B1A3834B00051978C /* screenshot.png in Resources */,
 				3912AAFF1A38176800DF07C8 /* CameraSquare@2x.png in Resources */,
 				3912AABA1A37FC6700DF07C8 /* LaunchScreen.xib in Resources */,
 				3912AB031A38176800DF07C8 /* LICENSE.txt in Resources */,
