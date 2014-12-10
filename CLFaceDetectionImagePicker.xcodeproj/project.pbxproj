@@ -14,6 +14,12 @@
 		3912AABD1A37FC6700DF07C8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAB51A37FC6700DF07C8 /* Info.plist */; };
 		3912AABE1A37FC6700DF07C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAB61A37FC6700DF07C8 /* main.m */; };
 		3912AABF1A37FC6700DF07C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAB81A37FC6700DF07C8 /* ViewController.m */; };
+		3912AADE1A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAD91A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m */; };
+		3912AAE61A37FE1A00DF07C8 /* CameraSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAE21A37FE1A00DF07C8 /* CameraSquare.png */; };
+		3912AAE71A37FE1A00DF07C8 /* CameraSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAE31A37FE1A00DF07C8 /* CameraSquare@2x.png */; };
+		3912AAE81A37FE1A00DF07C8 /* DPLiveImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAE41A37FE1A00DF07C8 /* DPLiveImage.storyboard */; };
+		3912AAE91A37FE1A00DF07C8 /* squarePNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAE51A37FE1A00DF07C8 /* squarePNG.png */; };
+		3912AAEC1A37FFF000DF07C8 /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAEB1A37FFF000DF07C8 /* UIImage+CL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,14 @@
 		3912AAB61A37FC6700DF07C8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3912AAB71A37FC6700DF07C8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3912AAB81A37FC6700DF07C8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3912AAD81A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFaceDetectionImagePickerViewController.h; sourceTree = "<group>"; };
+		3912AAD91A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFaceDetectionImagePickerViewController.m; sourceTree = "<group>"; };
+		3912AAE21A37FE1A00DF07C8 /* CameraSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraSquare.png; sourceTree = "<group>"; };
+		3912AAE31A37FE1A00DF07C8 /* CameraSquare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CameraSquare@2x.png"; sourceTree = "<group>"; };
+		3912AAE41A37FE1A00DF07C8 /* DPLiveImage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPLiveImage.storyboard; sourceTree = "<group>"; };
+		3912AAE51A37FE1A00DF07C8 /* squarePNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarePNG.png; sourceTree = "<group>"; };
+		3912AAEA1A37FFF000DF07C8 /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
+		3912AAEB1A37FFF000DF07C8 /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 		3912AAAD1A37FC6700DF07C8 /* CLFaceDetectionImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				3912AAD41A37FDCE00DF07C8 /* Resource */,
 				3912AAAE1A37FC6700DF07C8 /* AppDelegate.h */,
 				3912AAAF1A37FC6700DF07C8 /* AppDelegate.m */,
 				3912AAB01A37FC6700DF07C8 /* LaunchScreen.xib */,
@@ -89,6 +104,29 @@
 				3912AAB81A37FC6700DF07C8 /* ViewController.m */,
 			);
 			path = CLFaceDetectionImagePicker;
+			sourceTree = "<group>";
+		};
+		3912AAD41A37FDCE00DF07C8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3912AAE11A37FE1A00DF07C8 /* assets */,
+				3912AAD81A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.h */,
+				3912AAD91A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m */,
+				3912AAEA1A37FFF000DF07C8 /* UIImage+CL.h */,
+				3912AAEB1A37FFF000DF07C8 /* UIImage+CL.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3912AAE11A37FE1A00DF07C8 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				3912AAE21A37FE1A00DF07C8 /* CameraSquare.png */,
+				3912AAE31A37FE1A00DF07C8 /* CameraSquare@2x.png */,
+				3912AAE41A37FE1A00DF07C8 /* DPLiveImage.storyboard */,
+				3912AAE51A37FE1A00DF07C8 /* squarePNG.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,10 +209,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3912AAE81A37FE1A00DF07C8 /* DPLiveImage.storyboard in Resources */,
+				3912AAE71A37FE1A00DF07C8 /* CameraSquare@2x.png in Resources */,
 				3912AABD1A37FC6700DF07C8 /* Info.plist in Resources */,
 				3912AABC1A37FC6700DF07C8 /* Images.xcassets in Resources */,
 				3912AABA1A37FC6700DF07C8 /* LaunchScreen.xib in Resources */,
 				3912AABB1A37FC6700DF07C8 /* Main.storyboard in Resources */,
+				3912AAE91A37FE1A00DF07C8 /* squarePNG.png in Resources */,
+				3912AAE61A37FE1A00DF07C8 /* CameraSquare.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3912AADE1A37FDCE00DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */,
+				3912AAEC1A37FFF000DF07C8 /* UIImage+CL.m in Sources */,
 				3912AABF1A37FC6700DF07C8 /* ViewController.m in Sources */,
 				3912AABE1A37FC6700DF07C8 /* main.m in Sources */,
 				3912AAB91A37FC6700DF07C8 /* AppDelegate.m in Sources */,
@@ -388,6 +432,7 @@
 				3912AA961A37FBD400DF07C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3912AA971A37FBD400DF07C8 /* Build configuration list for PBXNativeTarget "CLFaceDetectionImagePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +441,7 @@
 				3912AA991A37FBD400DF07C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
