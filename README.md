@@ -57,10 +57,11 @@ After the imagePicker take photo or dismiss without detecting any face, it will 
 Using CLFaceDetectionImagePickerDelegate to customise the behaviour
 
 Following customisation key is allowed
-CLTotalDetectCountDownSecond;    //Total length of waiting period for face detection - Default: 20
-CLFaceDetectionSquareImageName;  //Image name for the face detection square image    - Default: CameraSquare
-CLFaceDetectionTimes;            //Continually detecting face times, this will be helpful to make sure the people are not shaking his head by purpose       - Default: 5
-CLCameraPosition;                //Choose which camera you want to use, CLCaptureDevicePositionBack or CLCaptureDevicePositionFront  -Default: CLCaptureDevicePositionFront
+
+###CLTotalDetectCountDownSecond;    //Total length of waiting period for face detection - Default: 20###
+###CLFaceDetectionSquareImageName;  //Image name for the face detection square image    - Default: CameraSquare###
+###CLFaceDetectionTimes;            //Continually detecting face times, this will be helpful to make sure the people are not shaking his head by purpose       - Default: 5###
+###CLCameraPosition;                //Choose which camera you want to use, CLCaptureDevicePositionBack or CLCaptureDevicePositionFront  -Default: CLCaptureDevicePositionFront###
 
 
 You need to fire below delegate function to apply your customisation
