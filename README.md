@@ -81,4 +81,4 @@ You need to fire below delegate function to apply your customisation
 
 ## Credits
 
-SVProgressHUD is brought to you by [Caesar Li]
+CLFaceDetectionImagePicker is brought to you by [Caesar Li]
