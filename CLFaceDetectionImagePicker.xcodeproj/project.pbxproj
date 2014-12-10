@@ -22,8 +22,9 @@
 		3912AB021A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAFA1A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m */; };
 		3912AB031A38176800DF07C8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3912AAFB1A38176800DF07C8 /* LICENSE.txt */; };
 		3912AB041A38176800DF07C8 /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3912AAFD1A38176800DF07C8 /* UIImage+CL.m */; };
-		3912AB081A381BD400DF07C8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3912AB071A381BD300DF07C8 /* README.md */; };
 		3912AB0A1A381BE100DF07C8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3912AB091A381BE100DF07C8 /* README.md */; };
+		394B8B381A38312D0051978C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 394B8B361A38312D0051978C /* LICENSE.txt */; };
+		394B8B391A38312D0051978C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 394B8B371A38312D0051978C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,9 @@
 		3912AAFB1A38176800DF07C8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		3912AAFC1A38176800DF07C8 /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
 		3912AAFD1A38176800DF07C8 /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
-		3912AB071A381BD300DF07C8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		3912AB091A381BE100DF07C8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		394B8B361A38312D0051978C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		394B8B371A38312D0051978C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,8 @@
 		3912AA681A37FBD400DF07C8 = {
 			isa = PBXGroup;
 			children = (
+				394B8B361A38312D0051978C /* LICENSE.txt */,
+				394B8B371A38312D0051978C /* README.md */,
 				3912AAAD1A37FC6700DF07C8 /* CLFaceDetectionImagePicker */,
 				3912AA721A37FBD400DF07C8 /* Products */,
 			);
@@ -100,7 +104,6 @@
 		3912AAAD1A37FC6700DF07C8 /* CLFaceDetectionImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				3912AB071A381BD300DF07C8 /* README.md */,
 				3912AAF31A38176800DF07C8 /* CLFaceDetectionImagePickerSourceCode */,
 				3912AAEF1A3815BB00DF07C8 /* LICENSE.txt */,
 				3912AAAE1A37FC6700DF07C8 /* AppDelegate.h */,
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394B8B381A38312D0051978C /* LICENSE.txt in Resources */,
 				3912AABD1A37FC6700DF07C8 /* Info.plist in Resources */,
 				3912AAF01A3815BB00DF07C8 /* LICENSE.txt in Resources */,
 				3912AB001A38176800DF07C8 /* CLFaceDetectionImagePicker.storyboard in Resources */,
@@ -250,8 +254,8 @@
 			files = (
 				3912AABF1A37FC6700DF07C8 /* ViewController.m in Sources */,
 				3912AB041A38176800DF07C8 /* UIImage+CL.m in Sources */,
-				3912AB081A381BD400DF07C8 /* README.md in Sources */,
 				3912AB0A1A381BE100DF07C8 /* README.md in Sources */,
+				394B8B391A38312D0051978C /* README.md in Sources */,
 				3912AABE1A37FC6700DF07C8 /* main.m in Sources */,
 				3912AB021A38176800DF07C8 /* CLFaceDetectionImagePickerViewController.m in Sources */,
 				3912AAB91A37FC6700DF07C8 /* AppDelegate.m in Sources */,
