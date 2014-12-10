@@ -17,11 +17,24 @@
 
 #import "UIImage+CL.h"
 
-#define AUTO_FACE_DETECTION_CYCLE_TIME 10
-#define TOTAL_TIMES_DETECT_FACE 5
-#define TOTAL_TIMES_COUNT_DOWN 4
+#define TOTAL_TIMES_COUNT_DOWN 4    //This is initial waiting time when the imagePicker is firstly opened.
+
+//Attribute Keys
+NSString *const CLTotalDetectCountDownSecond = @"CLTotalDetectCountDownSecond";
+NSString *const CLFaceDetectionSquareImageName = @"CLFaceDetectionSquareImageName";
+NSString *const CLFaceDetectionTimes = @"CLFaceDetectionTimes";
+
+//Default Values
+static NSInteger const CLTotalDetectCountDownSecondDefault = 10;
+static NSInteger const CLFaceDetectionTimesDefault = 5;
+static NSString* const CLFaceDetectionSquareImageNameDefault = @"CameraSquare";
 
 @interface CLFaceDetectionImagePickerViewController ()<UIGestureRecognizerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
+
+@property (nonatomic) NSInteger totalCountDownWaitingSecond;
+@property (nonatomic) NSInteger totalFaceDetectionTimes;
+@property (nonatomic, strong) NSString *faceDetectionSquareImageName;
+
 
 @property (weak, nonatomic) IBOutlet UIView *preView;
 
@@ -54,6 +67,28 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)setDelegate:(id<CLFaceDetectionImagePickerDelegate>)delegate
+{
+    _delegate = delegate;
+    [self applyCustomDefaults];
+}
+
+-(void)applyCustomDefaults
+{
+    NSDictionary *attributes;
+    
+    if ([self.delegate respondsToSelector:@selector(faceDetectionBehaviorAttributes)]) {
+        attributes = [self.delegate faceDetectionBehaviorAttributes];
+    }
+    
+    self.totalCountDownWaitingSecond = attributes[CLTotalDetectCountDownSecond] ? [attributes[CLTotalDetectCountDownSecond] integerValue] : CLTotalDetectCountDownSecondDefault;
+
+    self.square = [UIImage imageNamed: attributes[CLFaceDetectionSquareImageName] ? attributes[CLFaceDetectionSquareImageName] : CLFaceDetectionSquareImageNameDefault];
+    
+    
+    self.totalFaceDetectionTimes = attributes[CLFaceDetectionTimes] ? [attributes[CLFaceDetectionTimes] integerValue] : CLFaceDetectionTimesDefault;
 }
 
 - (void)viewDidLoad
@@ -90,7 +125,7 @@
 -(UIImage *)square
 {
     if(!_square){
-        _square = [UIImage imageNamed:@"CameraSquare"];
+        _square = [UIImage imageNamed:CLFaceDetectionSquareImageNameDefault];
     }
     return _square;
 }
@@ -198,7 +233,7 @@
         [rootLayer addSublayer:self.previewLayer];
         [self.session startRunning];
         
-        self.timerNoFaceDetect = [NSTimer scheduledTimerWithTimeInterval:AUTO_FACE_DETECTION_CYCLE_TIME target:self selector:@selector(noFaceDetected) userInfo:nil repeats:NO];
+        self.timerNoFaceDetect = [NSTimer scheduledTimerWithTimeInterval:self.totalCountDownWaitingSecond target:self selector:@selector(noFaceDetected) userInfo:nil repeats:NO];
         
         
     }
@@ -256,7 +291,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
             return;
         }
         
-        if(self.timesDetectFace > TOTAL_TIMES_DETECT_FACE){
+        if(self.timesDetectFace > self.totalFaceDetectionTimes){
             return;
         }
         
@@ -284,7 +319,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
         });
     }
 	   
-    if(self.timesDetectFace >= TOTAL_TIMES_DETECT_FACE ||  self.timesCountDown <= 0){
+    if(self.timesDetectFace >= self.totalFaceDetectionTimes ||  self.timesCountDown <= 0){
         [self.timerNoFaceDetect invalidate];
         CIContext *temporaryContext = [CIContext contextWithOptions:nil];
         CGImageRef videoImage = [temporaryContext
